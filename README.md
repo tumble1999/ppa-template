@@ -3,8 +3,8 @@ Created from: https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.htm
 
 ## Install
 ```
-curl -s --compressed "https://cinnabar-engine.github.io/cinnabar-engine-ppa/KEY.gpg" | sudo apt-key add -
-sudo curl -s --compressed -o /etc/apt/sources.list.d/cinnabar.list "https://cinnabar-engine.github.io/cinnabar-engine-ppa/cinnabar.list"
+curl -s --compressed "https://cinnabar-engine.github.io/cinnabar-ppa/KEY.gpg" | sudo apt-key add -
+sudo curl -s --compressed -o /etc/apt/sources.list.d/cinnabar.list "https://cinnabar-engine.github.io/cinnabar-ppa/cinnabar.list"
 sudo apt update
 ```
 
