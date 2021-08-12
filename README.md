@@ -9,7 +9,7 @@ sudo apt update
 ```
 
 ## Add Packages
-Add the deb files into the folder and.
+Add the deb files into the folder and then.
 ```
 dpkg-scanpackages --multiversion . > Packages
 gzip -k -f Packages
