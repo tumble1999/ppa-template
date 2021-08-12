@@ -1,12 +1,12 @@
-Package: cinnabar-keyring
+Package: cinnabar-archive-keyring
 Version: 0.1.0
 Architecture: all
 Maintainer: tumblegamer@gmail.com
-Filename: ./cinnabar-keyring.deb
-Size: 3460
-MD5sum: a1d5cd0486ca26bb254517c4ed253d64
-SHA1: 7ab191de8f31964c22d17eca1a260415c6d8c148
-SHA256: 1ae4cfef8bee90cd92c73ef64e17d61bb154715e1394f137dc4052a822879e1e
+Filename: ./cinnabar-archive-keyring.deb
+Size: 3472
+MD5sum: a08d467bb16bf88d2bb6b8435c63ebd0
+SHA1: 1b39bffacd1f2096c45712aebdb2bdfb0b191ece
+SHA256: da128914b0382fded8fd17911f9ac52782b6e15e228cc639a7fc7e85fe1c2441
 Section: development
 Priority: optional
 Description: Keyring for cinnabar
