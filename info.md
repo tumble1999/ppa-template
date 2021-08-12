@@ -1,7 +1,12 @@
 
+## Prerequisites
+```bash
+sudo apt install build-essential apt-utils
+```
+
 ## Add Packages
 Add the deb files into the folder and then.
-```
+```bash
 dpkg-scanpackages --multiversion . > Packages
 gzip -k -f Packages
 
