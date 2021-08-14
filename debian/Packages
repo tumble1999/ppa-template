@@ -17,25 +17,53 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Depends: libsdl2-2.0-0, libglew2.1, libassimp5
 Filename: ./libcinnabar-core.deb
-Size: 8028
-MD5sum: 36c4cf8893e93280414c8ed38244da0a
-SHA1: f67083af02d0a8694f1093fa36afb3959b1838c5
-SHA256: ce329f9492e61d826001343511416391b01d92ba316f05306b4d34738693c714
+Size: 8020
+MD5sum: dcfd1a09f74003d0d021f3e850cbf5a3
+SHA1: d57a60df61c1f6546f42f2d5f6ea1c473adb2222
+SHA256: 45acc90de27ff82f2fc39ff0ae1112d798b8606bb06430e46dd933716a90dcb5
 Section: development
 Priority: optional
 Description: Cinnabar Core
+
+Package: libcinnabar-core-dev
+Version: 0.0.0
+Architecture: all
+Maintainer: tumblegamer@gmail.com
+Depends: libcinnabar-core, libsdl2-dev, libglm-dev
+Filename: ./libcinnabar-core-dev.deb
+Size: 2032
+MD5sum: 215d9b32204de6692eaa01c3b509e64e
+SHA1: d8bdefc9765c8627087703232a98d43cfc0edfc9
+SHA256: f269a9d1899767f10b54746e533c5833424e5ec3539533b1e7d498a0ff459ca6
+Section: development
+Priority: optional
+Description: Cinnabar Core development files
 
 Package: libcinnabar-render
 Version: 0.0.0
 Architecture: all
 Maintainer: tumblegamer@gmail.com
-Depends: libsdl2-2.0-0, libglew2.1, libassimp5, libcinnabar-core
+Depends: libsdl2-2.0-0, libglew2.1, libassimp5
 Filename: ./libcinnabar-render.deb
-Size: 93240
-MD5sum: 64201d01fc42aed38e78cdfc7a5f7c30
-SHA1: 8e7a44c9fe8a1ab2ce294bacc632e7dacd257a32
-SHA256: 28364a66ee533ab157f17cf9c5873753f5ec0dda0fe5efb9af6a46dc263be2f4
+Size: 93524
+MD5sum: 0054bd2e952a6e3135bbc5f84b4dc4c5
+SHA1: e2dad41f8551a790d38ae6cb13677910140bf6f0
+SHA256: eb3c02a0513d67e40d638cb9294eff0596d56c8a433de5769689f4f4d78400c4
 Section: development
 Priority: optional
 Description: Cinnabar Renderer
+
+Package: libcinnabar-render-dev
+Version: 0.0.0
+Architecture: all
+Maintainer: tumblegamer@gmail.com
+Depends: libcinnabar-render, libsdl2-dev, libglew-dev, libglm-dev, libassimp-dev5
+Filename: ./libcinnabar-render-dev.deb
+Size: 3272
+MD5sum: 6c6b3f9bf31cb30b4920ec3fa4a3f684
+SHA1: 62a07a31a28558202c1b1edd2d767c8e3f3f34cc
+SHA256: d8933935bb8dee30159b6358e27577ef8aead8ba06ab7dc95a1e5241012d6991
+Section: development
+Priority: optional
+Description: Cinnabar Renderer development files
 

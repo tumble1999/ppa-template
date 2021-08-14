@@ -3,12 +3,12 @@ package: libcinnabar-render
 version: 0.0.0
 architecture: all
 maintainer: tumblegamer@gmail.com
-depends: libsdl2-2.0-0, libglew2.1, libassimp5, libcinnabar-core
+depends: libsdl2-2.0-0, libglew2.1, libassimp5
 filename: libcinnabar-render.deb
-size: 93240
-md5sum: 64201d01fc42aed38e78cdfc7a5f7c30
-sha1: 8e7a44c9fe8a1ab2ce294bacc632e7dacd257a32
-sha256: 28364a66ee533ab157f17cf9c5873753f5ec0dda0fe5efb9af6a46dc263be2f4
+size: 93524
+md5sum: 0054bd2e952a6e3135bbc5f84b4dc4c5
+sha1: e2dad41f8551a790d38ae6cb13677910140bf6f0
+sha256: eb3c02a0513d67e40d638cb9294eff0596d56c8a433de5769689f4f4d78400c4
 section: development
 priority: optional
 description: Cinnabar Renderer
