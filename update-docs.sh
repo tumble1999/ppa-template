@@ -25,4 +25,4 @@ do
 	fi
 	echo ${kv[0],,} ${kv[@]:1:99} >> $FILE
 
-done < Packages
+done < debian/Packages

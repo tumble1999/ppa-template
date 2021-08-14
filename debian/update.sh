@@ -8,5 +8,3 @@ gzip -k -f Packages
 apt-ftparchive release . > Release
 gpg --default-key "tumblegamer@gmail.com" -abs -o - Release > Release.gpg
 gpg --default-key "tumblegamer@gmail.com" --clearsign -o - Release > InRelease
-
-./update-docs.sh
