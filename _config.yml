@@ -1,9 +1,8 @@
 title: Cinnabar Packages
 
-repository:cinnabar-engine/cinnabar-ppa
+repository: cinnabar-engine/cinnabar-ppa
 permalink: pretty
 production: true
-
 
 markdown: kramdown
 theme: minima
@@ -19,11 +18,20 @@ kramdown:
     default-lang: plaintext
   syntax-highlighter: rouge
   smart-quotes: lsquo,rsquo,ldquo,rdquo
-
-collections:
-  packages:
-    output: true
 excludes:
   - "*.sh"
   - README.md
   - .gitignore
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  packages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: packages
+    values:
+      layout: package

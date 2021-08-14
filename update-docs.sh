@@ -13,6 +13,7 @@ do
 		fi
 		continue
 	fi
+	line=$(echo $line|sed 's/.\///g')
 	#echo $line
 	kv=($line)
 	#echo ${kv[0]} =\> ${kv[1]}
@@ -22,6 +23,6 @@ do
 		echo Creating $FILE...
 		echo --- > $FILE
 	fi
-	echo ${kv[0],,} ${line//$kv[0]} >> $FILE
+	echo ${kv[0],,} ${kv[@]:1:99} >> $FILE
 
 done < Packages

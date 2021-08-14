@@ -4,11 +4,11 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Filename: ./cinnabar-ppa.deb
 Size: 3472
-MD5sum: 78eb8260e7df8879e236826fd0ab0bdc
-SHA1: 36715359fbbec4d804ef234438300b86a48891bd
-SHA256: 6d7cb7546b572236e89c7ea1978b9bd5b4f330b3bdae008d485120b89317a1fa
+MD5sum: 31753d62f0d2a9b1bc7160eb1939b637
+SHA1: 036f7082d750b610cd0fd58ad5222ddb573adff1
+SHA256: 94e8d47388f8b562dc479f103b539916bb6e38aec0996a44a4051ff35ef020e9
 Section: development
-Priority: optional
+Priority: required
 Description: Debian PPA for cinnabar
 
 Package: libcinnabar-core
