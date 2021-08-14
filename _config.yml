@@ -21,8 +21,8 @@ kramdown:
   smart-quotes: lsquo,rsquo,ldquo,rdquo
 
 collections:
-	packages:
-		output: true
+  packages:
+    output: true
 excludes:
   - "*.sh"
   - README.md
