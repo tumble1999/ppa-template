@@ -5,4 +5,4 @@ Priority: optional
 Architecture: all
 Depends:
 Maintainer: tumblegamer@gmail.com
-Description: Keyring for cinnabar
+Description: Debian PPA for cinnabar

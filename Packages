@@ -3,13 +3,13 @@ Version: 0.1.0
 Architecture: all
 Maintainer: tumblegamer@gmail.com
 Filename: ./cinnabar-ppa.deb
-Size: 3468
-MD5sum: a7b656aa046c1a69864e2b7e59b0cd83
-SHA1: 667091ddd737ecb29502af700a686ce0308c092f
-SHA256: 09986010535cedc4eb0e0af54f7584af9f709131fba9b9c79170071e408003b7
+Size: 3472
+MD5sum: c9c1d4bbb2e72cadbeb02ccddc1e41db
+SHA1: 95612ad0dfbd4ee84f71c20cc6defd4b3982da1a
+SHA256: 5ddc8635b01377ba063bd024d0aa22d707dbe86bdc9770119f9221ec559d715b
 Section: development
 Priority: optional
-Description: Keyring for cinnabar
+Description: Debian PPA for cinnabar
 
 Package: cinnabar-renderer
 Version: 0.0.0
