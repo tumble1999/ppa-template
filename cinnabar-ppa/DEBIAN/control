@@ -1,4 +1,4 @@
-Package: cinnabar-archive-keyring
+Package: cinnabar-ppa
 Version: 0.1.0
 Section: development
 Priority: optional
