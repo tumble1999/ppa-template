@@ -1,12 +1,12 @@
 Package: cinnabar-ppa
-Version: 0.1.1
+Version: 0.1.2
 Architecture: all
 Maintainer: tumblegamer@gmail.com
 Filename: ./cinnabar-ppa.deb
-Size: 3472
-MD5sum: 31753d62f0d2a9b1bc7160eb1939b637
-SHA1: 036f7082d750b610cd0fd58ad5222ddb573adff1
-SHA256: 94e8d47388f8b562dc479f103b539916bb6e38aec0996a44a4051ff35ef020e9
+Size: 3468
+MD5sum: 2ebad487a590fb26b6a5fe4102ef044c
+SHA1: 208dcc51d814f0a457513eafb98bb953f1ebd9f1
+SHA256: f47fe077b14141685d947ffb350230b6e5c922c7860a3d08842e50b12e8f4fbe
 Section: development
 Priority: required
 Description: Debian PPA for cinnabar
