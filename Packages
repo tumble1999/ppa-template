@@ -11,3 +11,17 @@ Section: development
 Priority: optional
 Description: Keyring for cinnabar
 
+Package: cinnabar-renderer
+Version: 0.0.0
+Architecture: all
+Maintainer: tumblegamer@gmail.com
+Depends: libsdl2, libglew, libglm, libassimp
+Filename: ./libcinnabar.deb
+Size: 95396
+MD5sum: 45d3555a2b79c9988de965d47061aaf6
+SHA1: 1d401c1756a7540a66851b2210828d97383f8802
+SHA256: 6f9ab9be08295ccff118422ca32d069c944b8630b16c2cc85db843b00dc8e5b7
+Section: development
+Priority: optional
+Description: Cinnabar Renderer
+
