@@ -1,0 +1,35 @@
+# Maintainer: Your Name <youremail@domain.com>
+pkgname=cinnabar-pkg
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Debian PPA for cinnabar"
+arch=()
+url=""
+license=('GPL3')
+groups=()
+depends=()
+makedepends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=($pkgname-$pkgver.tar.gz)
+noextract=()
+md5sums=() #autofill using updpkgsums
+
+build() {
+}
+
+package() {
+	# put the cinnabar.conf file in /etc/pacman.conf.d/
+	if [! -d /etc/pacman.conf.d/ ]
+	then 
+		mkdir /etc/pacman.conf.d/
+	fi
+	cp cinnabar.conf /etc/pacman.conf.d/
+
+}
