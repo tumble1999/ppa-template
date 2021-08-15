@@ -11,10 +11,10 @@ depends On : sdl2 glew glm assimp
 optional Deps : None
 conflicts With : None
 replaces : None
-compressed Size : 115.47 KiB
+compressed Size : 115.49 KiB
 installed Size : 347.53 KiB
 packager : Unknown Packager
-build Date : Sun 15 Aug 2021 02:01:05 PM UTC
+build Date : Sun 15 Aug 2021 03:00:33 PM UTC
 install Script : No
 validated By : None
 signatures : None

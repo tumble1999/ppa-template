@@ -19,7 +19,7 @@ function create_docs { # $1Packages  $2:folder $3:name key $4:start
 		kv=($line)
 		kv[0]=${kv[0]// /.}
 		kv[0]=${kv[0],,}
-		echo ${kv[0]} =\> ${kv[1]}
+		#echo ${kv[0]} =\> ${kv[1]}
 		if [ ${kv[0]} == $3 ]
 		then
 			FILE=./$2/${kv[$4]}.md
