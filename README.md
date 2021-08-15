@@ -1,10 +1,15 @@
 # Cinnabar PPA
 
 ## Install
+
 ### Debian
-Download and install: https://cinnabar-engine.github.io/debian/cinnabar-ppa.deb
+
+download [cinnabar-ppa.deb](/debian/cinnabar-ppa.deb) and then install it with the `dpkg` command.
+
 ### Arch
+
 add this to pacman.conf
+
 ```
 [cinnabar_repo]
 Server = https://cinnabar-engine.github.io/arch/cinnabar

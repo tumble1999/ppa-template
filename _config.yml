@@ -20,13 +20,14 @@ kramdown:
   smart-quotes: lsquo,rsquo,ldquo,rdquo
 excludes:
   - "*.sh"
-  - README.md
   - .gitignore
   - Gemfile
   - Gemfile.lock
 
 collections:
   apt:
+    output: true
+  pacman:
     output: true
 
 defaults:
@@ -35,3 +36,8 @@ defaults:
       type: apt
     values:
       layout: apt
+  - scope:
+      path: ""
+      type: pacman
+    values:
+      layout: pacman

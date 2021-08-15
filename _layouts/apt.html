@@ -23,7 +23,7 @@ layout: page
 <li>
 {% assign package=site.apt | where: 'package', dep | first %}
 {% if package %}
-{% include package.html package=package %}
+{% include apt.html package=package %}
 {% else %}
 <strong>{{dep}}</strong>
 {% endif %}
