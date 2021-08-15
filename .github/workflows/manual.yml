@@ -26,3 +26,4 @@ jobs:
          git add .
          git commit -m "ppa update"
          git push
+         exit 0
