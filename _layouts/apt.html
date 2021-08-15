@@ -16,12 +16,12 @@ layout: page
 </ul>
 
 {% if page.depends %}
-<h2>Dependacies</h2>
+<h2>Dependencies</h2>
 <ul>
 {% assign deps = page.depends | split:', ' %}
 {% for dep in deps %}
 <li>
-{% assign package=site.packages | where: 'package', dep | first %}
+{% assign package=site.apt | where: 'package', dep | first %}
 {% if package %}
 {% include package.html package=package %}
 {% else %}

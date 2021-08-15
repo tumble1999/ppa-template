@@ -1,5 +1,5 @@
 <ul>
-{% for package in site.packages %}
+{% for package in site.apt %}
 <li>
 {% include package.html package=package %}
 

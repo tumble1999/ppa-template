@@ -26,12 +26,12 @@ excludes:
   - Gemfile.lock
 
 collections:
-  packages:
+  apt:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: packages
+      type: apt
     values:
-      layout: package
+      layout: apt

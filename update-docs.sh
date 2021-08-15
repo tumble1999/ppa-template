@@ -19,7 +19,7 @@ do
 	#echo ${kv[0]} =\> ${kv[1]}
 	if [ ${kv[0]} == Package: ]
 	then
-		FILE=./_packages/${kv[1]}.md
+		FILE=./_apt/${kv[1]}.md
 		echo Creating $FILE...
 		echo --- > $FILE
 	fi
