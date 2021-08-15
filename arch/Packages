@@ -1,0 +1,40 @@
+Name            : cinnabar-core
+Version         : 0.0.0-1
+Description     : Cinnabar Core
+Architecture    : x86_64
+URL             : None
+Licenses        : GPL
+Groups          : None
+Provides        : None
+Depends On      : sdl2  glm
+Optional Deps   : None
+Conflicts With  : None
+Replaces        : None
+Compressed Size : 12.56 KiB
+Installed Size  : 29.68 KiB
+Packager        : Unknown Packager
+Build Date      : Sun 15 Aug 2021 02:01:03 PM UTC
+Install Script  : No
+Validated By    : None
+Signatures      : None
+
+Name            : cinnabar-render
+Version         : 0.0.0-1
+Description     : Cinnabar Renderer
+Architecture    : x86_64
+URL             : None
+Licenses        : GPL
+Groups          : None
+Provides        : None
+Depends On      : sdl2  glew  glm  assimp
+Optional Deps   : None
+Conflicts With  : None
+Replaces        : None
+Compressed Size : 115.47 KiB
+Installed Size  : 347.53 KiB
+Packager        : Unknown Packager
+Build Date      : Sun 15 Aug 2021 02:01:05 PM UTC
+Install Script  : No
+Validated By    : None
+Signatures      : None
+

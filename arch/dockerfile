@@ -1,0 +1,5 @@
+FROM archlinux
+COPY . /app
+RUN pacman -Syu --noconfirm 
+RUN cd app && ./update.sh docker
+#CMD bash -c "/app/create-arch.sh $@" docker  >> /proc/1/fd/1
