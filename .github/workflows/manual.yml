@@ -20,6 +20,12 @@ jobs:
        chmod +x ./update.sh
        ./update.sh
 
+    - name: Update Arch PPA
+      run: |
+       cd arch
+       chmod +x ./update.sh
+       ./update.sh
+
     - name: Package List Website
       run: |
         ./update-docs.sh
