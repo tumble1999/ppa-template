@@ -11,6 +11,6 @@ download [cinnabar-ppa.deb](/debian/cinnabar-ppa.deb) and then install it with t
 add this to pacman.conf
 
 ```
-[cinnabar_repo]
-Server = https://cinnabar-engine.github.io/arch/cinnabar
+[cinnabar]
+Server = https://cinnabar-engine.github.io/arch
 ```
