@@ -1,7 +1,7 @@
 name: Update PPAs
 on: push
 jobs:
-  date:
+  ppa:
     runs-on: ubuntu-latest
     steps:
       # Checkout the branch
