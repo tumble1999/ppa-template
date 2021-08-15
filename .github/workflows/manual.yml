@@ -19,9 +19,8 @@ jobs:
           ./update-docs.sh
           
           
-#      - name: commit
-#        run: |
-#          # Stage the file, commit and push
-#          git add time.txt
-#          git commit -m "new date commit"
-#          git push origin master
+      - name: commit
+        run: |
+         git add .
+         git commit -m "ppa update"
+         git push
