@@ -1,4 +1,5 @@
 FROM archlinux
+RUN rm -rf /app
 COPY . /app
 RUN pacman -Syu --noconfirm 
 RUN cd app && ./update.sh docker
