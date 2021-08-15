@@ -1,0 +1,22 @@
+name: Update PPAs
+on: push
+jobs:
+  date:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the branch
+      - name: checkout
+        uses: actions/checkout@v2-beta # use either @v2-beta or @master. Eventually there will be a @v2 tag.
+
+      - name: Update Debian PPA
+        run: |
+          cd debian
+          chmod +x ./update.sh
+          ./update.sh
+
+#      - name: commit
+#        run: |
+#          # Stage the file, commit and push
+#          git add time.txt
+#          git commit -m "new date commit"
+#          git push origin master
