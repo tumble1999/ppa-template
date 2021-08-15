@@ -1,0 +1,29 @@
+name: Update PPAs
+on: push
+jobs:
+  date:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the branch
+      - name: checkout
+        uses: actions/checkout@v2-beta # use either @v2-beta or @master. Eventually there will be a @v2 tag.
+
+#       - name: Update Debian PPA
+#         run: |
+#           cd debian
+#           chmod +x ./update.sh
+#           ./update.sh
+
+      - name: Package List Website
+        run: |
+          ./update-docs.sh
+          
+          
+      - name: commit
+        run: |
+         git config --global user.email "octokit@github.com"
+         git config --global user.name "Github Actions"
+         git add .
+         git commit -m "ppa update"
+         git push
+         exit 0
