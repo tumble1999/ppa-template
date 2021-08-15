@@ -8,11 +8,11 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2-beta # use either @v2-beta or @master. Eventually there will be a @v2 tag.
 
-      - name: Update Debian PPA
-        run: |
-          cd debian
-          chmod +x ./update.sh
-          ./update.sh
+#       - name: Update Debian PPA
+#         run: |
+#           cd debian
+#           chmod +x ./update.sh
+#           ./update.sh
 
       - name: Package List Website
         run: |
