@@ -17,10 +17,10 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Depends: libsdl2-2.0-0, libglew2.1
 Filename: ./libcinnabar-core.deb
-Size: 8012
-MD5sum: 4f88aec38aa00f26eb6e4d1d82195c88
-SHA1: 5462e522595a3516ef5c43f14055f9b53ebadc5f
-SHA256: 5c02cba711cca0301f5d58a715d82fc6f91a4a2ceec0e56ab0d8e6d057042d30
+Size: 8000
+MD5sum: 161822a057943827f5b388c699f2e4da
+SHA1: 018fed3711d666118320a318aa2700c041e4f7e7
+SHA256: 793815c3903d7b133eee90b529394f2c918f605e56ca3b771cfe6016f04847c1
 Section: development
 Priority: optional
 Description: Cinnabar Core
@@ -31,10 +31,10 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Depends: libcinnabar-core, libsdl2-dev, libglm-dev
 Filename: ./libcinnabar-core-dev.deb
-Size: 1960
-MD5sum: 3db97644a0952e107d08d60cd07db4ef
-SHA1: d44578c9c03ba262b2e404171fc99591d7d679a0
-SHA256: a6006ec6604d1606e799dfc050133a02395616c440065dff376eee7a87f64f82
+Size: 1956
+MD5sum: 1ae39b6fb70a1cb47d809d5503e4e433
+SHA1: 146bc736b16c1ef7e4dfc03277d9fb5a1c56bb46
+SHA256: a97d9fb214932cb3809aeba0eac13e411a792664053422a5d2937b8353e206cd
 Section: development
 Priority: optional
 Description: Cinnabar Core development files
@@ -45,10 +45,10 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Depends: libsdl2-2.0-0, libglew2.1, libassimp5
 Filename: ./libcinnabar-render.deb
-Size: 93504
-MD5sum: 20af21470512d5fd30bb57222fc91c7e
-SHA1: f5049fd618c3a7ebbcf14ae0a53ad49c89e6d626
-SHA256: 3355de6257453a1025c13df81581671bd03280db84798395fb8abe1efe39c75b
+Size: 92960
+MD5sum: d8c61f7f87facad320dd9c9612e5ee8b
+SHA1: 631451ed00f2d44e52c8d5db7c8d2c61e925b219
+SHA256: d430440af48d976f65d7d751181b4da60e0c2eab985ce7914d9b3a3728b7c265
 Section: development
 Priority: optional
 Description: Cinnabar Renderer
@@ -59,10 +59,10 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Depends: libcinnabar-render, libsdl2-dev, libglew-dev, libglm-dev, libassimp-dev
 Filename: ./libcinnabar-render-dev.deb
-Size: 3132
-MD5sum: b56cf3b76e777f99cb9e38c6b9e20b56
-SHA1: 8cb5c858c0afe1c993983d97acf4acaded31073b
-SHA256: 5d52b3b7e470e6ea39e372c0e875e44260aedf7840943c8357bee22679b473a9
+Size: 3204
+MD5sum: b7cdba05e623b49167cccd1c5041eb14
+SHA1: 4a49b19169833bbc49e5ad5957f6811b8d91f89d
+SHA256: 82bae12b8f616127477f7437f3860d5a37485b400dac9e080bc25ca87384fc28
 Section: development
 Priority: optional
 Description: Cinnabar Renderer development files
