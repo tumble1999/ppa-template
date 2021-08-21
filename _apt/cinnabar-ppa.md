@@ -4,10 +4,10 @@ version: 0.2.0
 architecture: all
 maintainer: tumblegamer@gmail.com
 filename: cinnabar-ppa.deb
-size: 3572
-md5sum: 150765e4d8f72af955f3ce5ba1044789
-sha1: 8b16d9addc8b97941723b96868cc7938e2386ea0
-sha256: 4c8e668471ec1042ae860026c2b6ce294a4dc26eb6bdc690c46bc5835a585483
+size: 3300
+md5sum: 8a07e625da46f0c9ca186c2a4909eae3
+sha1: 5d0f43821eb73bc652dc3ea843f9160d50308b9b
+sha256: 4fd021d7a70bc7442ece31c2db46b4a728924574c58e289300173b592ea0bba4
 section: development
 priority: required
 description: Debian PPA for cinnabar
