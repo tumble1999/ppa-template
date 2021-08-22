@@ -6,9 +6,9 @@ maintainer: tumblegamer@gmail.com
 depends: libcinnabar-render, libsdl2-dev, libglew-dev, libglm-dev, libassimp-dev
 filename: libcinnabar-render-dev.deb
 size: 3200
-md5sum: 4ca9573c94f430cf045ddfcdae36b50d
-sha1: c96afac1052c13475bc9a413ea6f57e120e4ca4d
-sha256: 433766960a9fcb0bbaf05c9f1530011827feee987a7e5dc56a970be6f27df985
+md5sum: b2295dbfc2098c3e7d43924687d4e9c0
+sha1: 97bd2b705c92b684fd068e746d615ec7ffaf2392
+sha256: b26a0ceedef81f9779266c95ae5720ad586e6db3937e767799f2aaf81ec50a4e
 section: development
 priority: optional
 description: Cinnabar Renderer development files

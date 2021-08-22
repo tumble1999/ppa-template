@@ -5,10 +5,10 @@ architecture: all
 maintainer: tumblegamer@gmail.com
 depends: libcinnabar-core, libsdl2-dev, libglm-dev
 filename: libcinnabar-core-dev.deb
-size: 1992
-md5sum: 878d4a1d32bf822dd8c69115d8bb448b
-sha1: aaed451f1f4ccc051fdf2a33fe56265de5c633c7
-sha256: fed19f7e1091aad7471c9a5fcaffbe755ff3b9ed4c858a0ffdb75ff39b4ec2ab
+size: 2096
+md5sum: 053e4cc78bfd0abcae32633f55c2c1da
+sha1: f2500f619f4b1d3c66c9d29f08f4d4355fa1ff29
+sha256: f85c6af3cf06071a6528fcdc6b89d2144e05d0e7d590c1d6426e86241c29204b
 section: development
 priority: optional
 description: Cinnabar Core development files

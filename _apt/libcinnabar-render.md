@@ -5,11 +5,11 @@ architecture: all
 maintainer: tumblegamer@gmail.com
 depends: libsdl2-2.0-0, libglew2.1, libassimp5
 filename: libcinnabar-render.deb
-size: 93740
-md5sum: c01618bb833940406bfcef32f75f3d38
-sha1: c84f34a316740b4592a8477f524c23bf97b9b8fa
-sha256: 5e88ff659d25196b2c8d6f789d9c13b52f03a4ed60c10c8c7e58b5105568d53c
-section: development
+size: 90884
+md5sum: a7d8b6551ddd8657d5a14cfbce107ccc
+sha1: 37a6393f3e29c83520fca5c72009c0f37d94281a
+sha256: bebce6c6f71d66293bed953f551911e5fed1ae3f248ce8720dfa9ad619d42984
+section: lib
 priority: optional
 description: Cinnabar Renderer
 ---
