@@ -5,10 +5,10 @@ architecture: all
 maintainer: tumblegamer@gmail.com
 depends: libsdl2-2.0-0, libglew2.1
 filename: libcinnabar-core.deb
-size: 12388
-md5sum: d40135e2f3edc8c57fa278215bd70b4b
-sha1: c9703c6022690e1c173e109930cec254bee22c7c
-sha256: ade2fec7792a7913c37e9233c3ea327bc1f4379804bcd0d2feb136b243c7088a
+size: 12364
+md5sum: 0d406bf3616ff658c47dd7857bf8f8ca
+sha1: a7c85ffb5357086868b901b7339c1109b015f795
+sha256: ab7d57aa6dbd25bd836dc35a0dc8194826a7b29ef7b2d1d6e67797b1521524cf
 section: lib
 priority: optional
 description: Cinnabar Core
