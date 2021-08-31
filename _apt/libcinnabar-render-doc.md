@@ -4,10 +4,10 @@ version: 0.0.0
 architecture: all
 maintainer: tumblegamer@gmail.com
 filename: libcinnabar-render-doc.deb
-size: 129804
-md5sum: 099b224e5295536b4f0519e313262235
-sha1: e513d2acf219088eae2aa5f0e9110a4f42dae007
-sha256: 19a8f91cdc8881344b42156ac14158947969876d8ea43d3228e0c2cf78480366
+size: 130204
+md5sum: b543dd284221a11671c3bd2cfba39c80
+sha1: 247c15b657921b335a6b5706276ceda4c6514818
+sha256: ec1e79f27042e1eb0bfdc1d51bffcc15915d07501673ed6e39b40ede30904a15
 section: doc
 priority: optional
 description: Reference manual for Cinnabar Render

@@ -17,10 +17,10 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Depends: libsdl2-2.0-0, libglew2.1
 Filename: ./libcinnabar-core.deb
-Size: 12380
-MD5sum: e6a2bfcfe58200e0f5688a6267157e76
-SHA1: 628c6c469e775e5db22593e25d264538de245db5
-SHA256: fbf8960acf10ddb6ff233a90ce15260bb48c01e81a70fd616862e3c6bc7baa4d
+Size: 44080
+MD5sum: d0323e6b975144b298f045f9b85d51fd
+SHA1: 537fefd64a0e90e54d11f84636acb618127b5493
+SHA256: 1c7751fbf9963628960c587d5f7a1c5f766f8f297f5ef3636dc2fc0f8897e160
 Section: lib
 Priority: optional
 Description: Cinnabar Core
@@ -31,10 +31,10 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Depends: libcinnabar-core, libsdl2-dev, libglm-dev
 Filename: ./libcinnabar-core-dev.deb
-Size: 4264
-MD5sum: facca319940ebfc485d2a235fec7a8bb
-SHA1: 14a2a71a8c082f647093cc080d08c451908443fd
-SHA256: d58e7bbda5d3bd44c913205f532d2fe4c5d421f66b9404396e0b01cbcfd55d12
+Size: 5036
+MD5sum: 3e1ec4d28f0cc100b2a71866c7098eb4
+SHA1: f9863d5110790936e2cf74002070a375598512bc
+SHA256: ae8e9a1729be6d76f772e676223fbb22391991484a6fb0b641a8d00594b49574
 Section: development
 Priority: optional
 Description: Cinnabar Core development files
@@ -44,10 +44,10 @@ Version: 0.0.0
 Architecture: all
 Maintainer: tumblegamer@gmail.com
 Filename: ./libcinnabar-core-doc.deb
-Size: 108384
-MD5sum: 975006210612910533e0f38e5dfddccd
-SHA1: 7b526105054aaf74449068a419a81bc972ccbbfe
-SHA256: 26108d7fa07bbb7ba5a00e3f9241aa078fcb53cb52c0d4adf2a26f2ca9f38adf
+Size: 110584
+MD5sum: 1c90060a4d367112b80430fd4f9f9287
+SHA1: 181e4c8a5381d47a5b6a63379edf61045202ae52
+SHA256: 2257d8b4e8f6140b94af25c20d51144225b8a44fcf8088f7c3e318eedf9efd3a
 Section: doc
 Priority: optional
 Description: Reference manual for Cinnabar Core
@@ -58,10 +58,10 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Depends: libsdl2-2.0-0, libglew2.1, libassimp5
 Filename: ./libcinnabar-render.deb
-Size: 90640
-MD5sum: bc9ae2a0083f41544e48fadb3a4f2b62
-SHA1: d25303e8a4505be152ef7cd6dfea4562305b9579
-SHA256: 67c8e7ecebb32bfb2768635b9c55da920a89d039cc84a5852e23f858c22f2cdc
+Size: 309540
+MD5sum: b5be40e1a8202aa9ec41908a59be2973
+SHA1: 40884ce02971b2999c29785541c210f1f789d803
+SHA256: 990cd180712a51e0deee83dc99a11fb2ed106ae13d3d118eb69644170874dab5
 Section: lib
 Priority: optional
 Description: Cinnabar Renderer
@@ -72,10 +72,10 @@ Architecture: all
 Maintainer: tumblegamer@gmail.com
 Depends: libcinnabar-render, libsdl2-dev, libglew-dev, libglm-dev, libassimp-dev
 Filename: ./libcinnabar-render-dev.deb
-Size: 10676
-MD5sum: e241db466994a8557d429be81bb04f6e
-SHA1: 826824476f3a71348ee8fd08a81aa5deedb53bf6
-SHA256: 68b920dc759773030fcb3f3e70b3cf662ade2c82ac669e8d28d8d282eec76b75
+Size: 9920
+MD5sum: 70d6bafdf682c70572b4fcf4ac0eda4b
+SHA1: 4f72a2c1237006ddf534a378dd04a03627832794
+SHA256: 06c56d1aef52acfbff89513c518ea83834d34d25e85332342dbe092812515b25
 Section: development
 Priority: optional
 Description: Cinnabar Renderer development files
@@ -85,10 +85,10 @@ Version: 0.0.0
 Architecture: all
 Maintainer: tumblegamer@gmail.com
 Filename: ./libcinnabar-render-doc.deb
-Size: 129804
-MD5sum: 099b224e5295536b4f0519e313262235
-SHA1: e513d2acf219088eae2aa5f0e9110a4f42dae007
-SHA256: 19a8f91cdc8881344b42156ac14158947969876d8ea43d3228e0c2cf78480366
+Size: 130204
+MD5sum: b543dd284221a11671c3bd2cfba39c80
+SHA1: 247c15b657921b335a6b5706276ceda4c6514818
+SHA256: ec1e79f27042e1eb0bfdc1d51bffcc15915d07501673ed6e39b40ede30904a15
 Section: doc
 Priority: optional
 Description: Reference manual for Cinnabar Render

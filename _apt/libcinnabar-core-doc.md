@@ -4,10 +4,10 @@ version: 0.0.0
 architecture: all
 maintainer: tumblegamer@gmail.com
 filename: libcinnabar-core-doc.deb
-size: 108384
-md5sum: 975006210612910533e0f38e5dfddccd
-sha1: 7b526105054aaf74449068a419a81bc972ccbbfe
-sha256: 26108d7fa07bbb7ba5a00e3f9241aa078fcb53cb52c0d4adf2a26f2ca9f38adf
+size: 110584
+md5sum: 1c90060a4d367112b80430fd4f9f9287
+sha1: 181e4c8a5381d47a5b6a63379edf61045202ae52
+sha256: 2257d8b4e8f6140b94af25c20d51144225b8a44fcf8088f7c3e318eedf9efd3a
 section: doc
 priority: optional
 description: Reference manual for Cinnabar Core
