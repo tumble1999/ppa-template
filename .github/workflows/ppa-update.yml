@@ -27,9 +27,9 @@ jobs:
       id: debian
       if: steps.fetch.outputs.DEBIAN == 1
       env:
-        PPA_KEY: ${{ secrets.PPA_KEY }}
+        GPG_KEY: ${{ secrets.GPG_KEY }}
       run: |
-        echo -n "$PPA_KEY" | base64 --decode | gpg --import
+        echo -n "$GPG_KEY" | base64 --decode | gpg --import
         cd debian
         chmod +x ./update.sh
         ./update.sh
@@ -62,7 +62,7 @@ jobs:
       if: steps.arch.outputs.CHANGES == 1 || steps.debian.outputs.CHANGES == 1 || steps.web.outputs.CHANGES == 1
       continue-on-error: true
       run: |
-       git config --global user.email "octokit@github.com"
+       git config --global user.email "octocat@github.com"
        git config --global user.name "Github Actions"
        git add .
        git commit -m "ppa update"

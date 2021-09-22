@@ -1,8 +1,0 @@
-Package: cinnabar-ppa
-Version: 0.2.0
-Section: development
-Priority: required
-Architecture: all
-Depends:
-Maintainer: tumblegamer@gmail.com
-Description: Debian PPA for cinnabar

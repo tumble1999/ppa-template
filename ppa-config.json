@@ -1,10 +1,9 @@
 {
 	"repos": [
-		"cinnabar-engine/cinnabar"
+
 	],
 	"distros": [
 		["windows","*.dll","*-win.zip"],
-		["debian","*.deb"],
-		["arch","*.pkg.*"]
+		["debian","*.deb"]
 	]
 }
