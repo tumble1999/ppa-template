@@ -17,11 +17,12 @@ kramdown:
     default-lang: plaintext
   syntax-highlighter: rouge
   smart-quotes: lsquo,rsquo,ldquo,rdquo
-excludes:
+exclude:
   - "*.sh"
   - .gitignore
   - Gemfile
   - Gemfile.lock
+  - README-SETUP.md
 
 collections:
   apt:
