@@ -1,5 +1,5 @@
 # Cinnabar PPA
-[![Update PPAs](https://github.com/cinnabar-engine/cinnabar-engine.github.io/actions/workflows/ppa-update.yml/badge.svg)](https://github.com/cinnabar-engine/cinnabar-engine.github.io/actions/workflows/ppa-update.yml)
+[![PPA Compilation](https://github.com/cinnabar-engine/cinnabar-engine.github.io/actions/workflows/ppa-update.yml/badge.svg)](https://github.com/cinnabar-engine/cinnabar-engine.github.io/actions/workflows/ppa-update.yml)
 
 ## Install
 

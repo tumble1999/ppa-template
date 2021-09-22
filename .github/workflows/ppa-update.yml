@@ -20,36 +20,46 @@ jobs:
         ./get-packages.sh
         git add .
         CHANGES=`git diff --name-only HEAD`
-        echo "::set-output name=ARCH::$(if [[ `echo ${CHNAGES}|grep "arch" | wc -l` > 0 ]]; then exit 0; else exit 1; fi)\n"
-        echo "::set-output name=DEBIAN::$(if [[ `echo ${CHNAGES}|grep "debian" | wc -l` > 0 ]]; then exit 0; else exit 1; fi)\n"
-        #if [[ `echo ${CHNAGES} | wc -l` > 0 ]]; then exit 0; else exit 1; fi
-    - name: Configure GPG Key
-      if: steps.fetch.outputs.DEBIAN == 0
-      run: |
-        echo -n "$PPA_KEY" | base64 --decode | gpg --import
-      env:
-        PPA_KEY: ${{ secrets.PPA_KEY }}
+        echo "::set-output name=ARCH::$(if [[ `echo ${CHANGES}|grep "arch" | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
+        echo "::set-output name=DEBIAN::$(if [[ `echo ${CHANGES}|grep "debian" | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
 
     - name: Update Debian PPA
-      if: steps.fetch.outputs.DEBIAN == 0
+      id: debian
+      if: steps.fetch.outputs.DEBIAN == 1
+      env:
+        PPA_KEY: ${{ secrets.PPA_KEY }}
       run: |
-       cd debian
-       chmod +x ./update.sh
-       ./update.sh
+        echo -n "$PPA_KEY" | base64 --decode | gpg --import
+        cd debian
+        chmod +x ./update.sh
+        ./update.sh
+        git add .
+        CHANGES=`git diff --name-only HEAD`
+        echo "::set-output name=CHANGES::$(if [[ `echo ${CHANGES}|grep "debian" | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
 
     - name: Update Arch PPA
-      if: steps.fetch.outputs.ARCH == 0
+      id: arch
+      if: steps.fetch.outputs.ARCH == 1
       run: |
        cd arch
        chmod +x ./update.sh
        ./update.sh
+        git add .
+        CHANGES=`git diff --name-only HEAD`
+        echo "::set-output name=CHANGES::$(if [[ `echo ${CHANGES}|grep "arch" | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
 
     - name: Update Website
+      id: web
+      if: steps.arch.outputs.CHANGES == 1 || steps.debian.outputs.CHANGES == 1
       run: |
-        ./update-docs.sh
+        ./update-website.sh
+        git add .
+        CHANGES=`git diff --name-only HEAD`
+        echo "::set-output name=CHANGES::$(if [[ `echo ${CHANGES}|grep -e _pacman -e _apt | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
 
 
     - name: commit
+      if: steps.arch.outputs.CHANGES == 1 || steps.debian.outputs.CHANGES == 1 || steps.web.outputs.CHANGES == 1
       continue-on-error: true
       run: |
        git config --global user.email "octokit@github.com"
