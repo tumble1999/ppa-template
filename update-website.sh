@@ -3,6 +3,7 @@
 
 function create_docs { # $1Packages  $2:folder $3:name key $4:start
 	FILE=
+	if [ ! -d $2 ]; then mkdir $2; fi
 	while read line
 	do
 		if [ "$line" == "" ] 
