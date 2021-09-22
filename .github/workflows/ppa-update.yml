@@ -23,8 +23,6 @@ jobs:
         echo "::set-output name=ARCH::$(if [[ `echo ${CHNAGES}|grep "arch" | wc -l` > 0 ]]; then exit 0; else exit 1; fi)\n"
         echo "::set-output name=DEBIAN::$(if [[ `echo ${CHNAGES}|grep "debian" | wc -l` > 0 ]]; then exit 0; else exit 1; fi)\n"
         #if [[ `echo ${CHNAGES} | wc -l` > 0 ]]; then exit 0; else exit 1; fi
-    runs-on: ubuntu-latest
-    steps:
     - name: Configure GPG Key
       if: steps.fetch.outputs.DEBIAN == 0
       run: |
