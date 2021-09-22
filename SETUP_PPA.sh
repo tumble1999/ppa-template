@@ -57,10 +57,10 @@ Download [${PPA_NAME}.deb](/debian/${PPA_NAME}.deb) and then install it with the
 
 Add this to /etc/pacman.conf
 
-```
+\`\`\`
 [${PPA_NAME}]
 Server = ${PPA_URL}/arch
-```">README.md
+\`\`\`">README.md
 cp _config.yml _config.yml.bak
 cp arch/update.sh arch/update.sh.bak
 cp debian/update.sh debian/update.sh.bak
