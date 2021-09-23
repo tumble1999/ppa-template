@@ -20,8 +20,8 @@ jobs:
         ./get-packages.sh
         git add .
         CHANGES=`git diff --name-only HEAD`
-        echo "::set-output name=ARCH::$(if [[ `echo ${CHANGES}|grep "arch" | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
-        echo "::set-output name=DEBIAN::$(if [[ `echo ${CHANGES}|grep "debian" | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
+        echo "::set-output name=ARCH::$(if [ `echo ${CHANGES}|grep "arch" | wc -l` > 0 ]; then echo 1; else echo 0; fi)"
+        echo "::set-output name=DEBIAN::$(if [ `echo ${CHANGES}|grep "debian" | wc -l` > 0 ]; then echo 1; else echo 0; fi)"
 
     - name: Update Debian PPA
       id: debian
@@ -35,7 +35,7 @@ jobs:
         ./update.sh
         git add .
         CHANGES=`git diff --name-only HEAD`
-        echo "::set-output name=CHANGES::$(if [[ `echo ${CHANGES}|grep "debian" | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
+        echo "::set-output name=CHANGES::$(if [ `echo ${CHANGES}|grep "debian" | wc -l` > 0 ]; then echo 1; else echo 0; fi)"
 
     - name: Update Arch PPA
       id: arch
@@ -46,7 +46,7 @@ jobs:
        ./update.sh
         git add .
         CHANGES=`git diff --name-only HEAD`
-        echo "::set-output name=CHANGES::$(if [[ `echo ${CHANGES}|grep "arch" | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
+        echo "::set-output name=CHANGES::$(if [ `echo ${CHANGES}|grep "arch" | wc -l` > 0 ]; then echo 1; else echo 0; fi)"
 
     - name: Update Website
       id: web
@@ -55,7 +55,7 @@ jobs:
         ./update-website.sh
         git add .
         CHANGES=`git diff --name-only HEAD`
-        echo "::set-output name=CHANGES::$(if [[ `echo ${CHANGES}|grep -e _pacman -e _apt | wc -l` > 0 ]]; then exit 1; else exit 0; fi)\n"
+        echo "::set-output name=CHANGES::$(if [ `echo ${CHANGES}|grep -e _pacman -e _apt | wc -l` > 0 ]; then echo 1; else echo 0; fi)"
 
 
     - name: commit
