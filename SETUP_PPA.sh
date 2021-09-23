@@ -120,7 +120,7 @@ fi
 
 echo "-- Creating ${PKG_ROOT}/etc/apt/sources.list.d/${PPA_NAME}.list"
 mkdir -p ${PKG_ROOT}/etc/apt/sources.list.d
-echo "deb ${PPA_URL} ./">${PKG_ROOT}/etc/apt/sources.list.d/${PPA_NAME}.list
+echo "deb ${PPA_URL}/debian ./">${PKG_ROOT}/etc/apt/sources.list.d/${PPA_NAME}.list
 
 dpkg-deb --build $PPA_NAME
 
