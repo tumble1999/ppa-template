@@ -1,12 +1,16 @@
 #!/bin/bash
 
 
-function create_docs { # $1Packages  $2:folder $3:name key $4:start
+function create_docs { # $1:Packages  $2:folder $3:name key $4:start
 	FILE=
+	if [ ! -f $1 ]; then
+		echo "$1 does not exist"
+		exit
+	fi
 	if [ ! -d $2 ]; then mkdir $2; fi
 	while read line
 	do
-		if [ "$line" == "" ] 
+		if [ "$line" == "" ]
 		then
 			if [ "$FILE"!="" ]
 			then

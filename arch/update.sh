@@ -4,13 +4,9 @@ NAME=PPA_NAME
 PPA=.db.tar.gz
 EXT=.pkg.tar.zst
 
-rm ${NAME} Packages ${NAME}${PPA}
-
 if [ "$(cat /etc/os-release | grep ^ID | sed 's/ID=//g')" != "arch" ]
 then
-	sudo docker build . -t ${NAME}-ppa
-	sudo docker run --rm ${NAME}-ppa tar -cC /app/ppa . | tar -xC .
-	#ln -s $NAME$PPA $NAME
+	echo "Please run this file in Arch Linux"
 	exit
 fi
 
@@ -18,20 +14,13 @@ if [ -f Packages ]
 then
 	rm Packages
 fi
+touch Packages
 
-for a in $(ls *$EXT)
-do
-pacman -Qip $a >>Packages
-repo-add $NAME$PPA $a
-done
-
-
-if [ "$1"=="docker" ]
+if [ -n $(ls *$EXT -l 2>/dev/null) ]
 then
-	rm -rf ppa
-	ls
-	mkdir ppa
-	cp {Packages,${NAME}.*} ppa
-#else
-	#ln -s $NAME$PPA $NAME
+	for a in $(ls *$EXT 2>/dev/null)
+	do
+		pacman -Qip $a >>Packages
+	done
 fi
+repo-add ./$NAME$PPA $(ls *$EXT 2>/dev/null)

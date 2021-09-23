@@ -24,9 +24,9 @@ if [[ -n "${repos}" ]]; then
 						if [[ -n "${exts}" ]]; then
 							for extention in $exts; do
 								if [[ $name == $extention ]]; then
-									mkdir $folder
+									if [ ! -d $folder ]; then mkdir $folder; fi
 									cd $folder
-									rm $name
+									if [ -f $name ]; then rm $name; fi
 									wget $url
 									cd ..
 								fi
