@@ -66,6 +66,7 @@ cp arch/update.sh arch/update.sh.bak
 cp debian/update.sh debian/update.sh.bak
 sed -i s/PPA_NAME/${PPA_NAME}/g */update.sh _config.yml
 sed -i s/PPA_EMAIL/${PPA_EMAIL}/g */update.sh _config.yml
+sed -i s/PPA_URL/${PPA_URL}/g */update.sh _config.yml
 
 
 
