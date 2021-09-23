@@ -32,7 +32,7 @@ function prepare_key() {
 		rm $1.private.key
 	fi
 	gpg --export -a $1 > $2.key
-	gpg --export-secret-keys -a $1 > $2.private.key
+	gpg --export-secret-keys $1 | base64 > $2.private.key
 	if [ -f $2.key ]
 	then
 		gpg --no-default-keyring --keyring ./$2_keyring.gpg --import $2.key
