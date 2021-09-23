@@ -4,7 +4,7 @@ This is a template of a ppa that watches the specified repositorues for releases
 * `gpg` - [debian](https://packages.debian.org/stable/gnupg), [arch](https://archlinux.org/packages/core/x86_64/gnupg/)
 * `dpkg-dev` - [debian (`dpkg-dev`)](https://packages.debian.org/stable/dpkg-dev), [arch (`dpkg`)](https://archlinux.org/packages/community/x86_64/dpkg/)
 ## How to Setup
-1. First start by [using this template](/generate) and then clone it to your PC.
+1. First start by [using this template](https://github.com/tumble1999/ppa-template/generate) and then clone it to your PC.
 1. Then run `SETUP_PPA.sh` parameters including `name`, `email`, `url`.
 	* `name` - Name of the PPA taht you'd like.
 	* `email` - Email to sign the debain ppa
